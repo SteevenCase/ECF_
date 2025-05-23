@@ -1,5 +1,16 @@
 @import url("/node_modules/bootstrap-icons/font/bootstrap-icons.css");
 @import "custom";
-.coin {
-  color: white;
+
+main {
+  padding-top: 5rem;
+  padding-left: 1rem;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+}
+footer {
+  padding: 1rem;
+  bottom: 0;
+  width: 100%;
 }
