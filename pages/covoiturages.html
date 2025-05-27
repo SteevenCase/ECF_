@@ -1,0 +1,141 @@
+<div class="hero-scene">
+  <div class="text-center text-white hero-scene-content">
+    <h1>Covoiturages</h1>
+    <p>ici vous pouvez voir les covoiturages disponibles</p>
+   
+     <!-- Button pour ouvrir la modale -->
+<button type="button" class="btn btn-primary rounded-pill text-secondary"  data-bs-toggle="modal" data-bs-target="#trouverUnTrajet">
+  Trouvez un trajet
+</button>
+  </div>
+
+   <!-- Modal -->
+<div class="modal fade" id="trouverUnTrajet" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 text-primary" id="exampleModalLabel">Trouvez un trajet</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      
+      <div class="modal-body">
+
+        <form>
+          <div class="mb-3">
+            <label for="depart" class="form-label">Départ</label>
+            <input type="text" class="form-control" id="depart" aria-describedby="departAide">
+            <div id="departAide" class="form-text">Choisissez le lieu de départ de votre trajet.</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="arrivee" class="form-label">Arrivée</label>
+            <input type="text" class="form-control" id="arrivee"
+            aria-describedby="arriveeAide">
+            <div id="arriveeAide" class="form-text">Choisissez le lieu d'arrivée de votre trajet.</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="quand" class="form-label">Quand ?</label>
+            <input type="date" class="form-control" id="quand"
+            aria-describedby="quandAide">
+            <div id="quandAide" class="form-text">Choisissez la date de votre trajet.</div>
+          </div>
+
+         
+         <div class="container text-center">
+          <button type="submit" class="btn btn-primary">Rechercher</button>
+         </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+<!--SECTION-->
+<section>
+  <article>
+    <div class="container text-center p-4">
+      <h2 class="text-primary">Bienvenue sur EcoRide</h2>
+      <div class="text-center">
+        <a class="text-primary" href="/inscription"
+          >Inscrivez vous pour créer un trajet</a
+        >
+      </div>
+      <br />
+      
+      <div class="row row-cols-2">
+        <div class="col text-center">
+          <i class="bi bi-tree"></i>
+          <h2>
+            Ecologique,
+          </h2>
+          <p style="font-size: 1.5em;">
+            notre ambition chez EcoRide est de réduire l’impact
+            écologique des déplacements grâce au covoiturage .
+          </p>
+        </div>
+        <div class="col text-center">
+          <img
+            class=" w-100 rounded"
+            src="../images/routeAerienne.jpg"
+            alt="vue aérienne d'une route de forêt avec un camion roulant droit vers son destin"
+          />
+          
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="bg-dark">
+    <div class="container p-4">
+      <div class="row row-cols-2 text-secondary">
+        <div class="col text-center">
+          <img
+            class="w-100 rounded"
+            src="../images/Section1.jpg"
+            alt="vue aérienne d'une route de forêt avec des arbres en automne"
+          />
+        </div>
+        <div class="col text-center">
+          <i class="bi bi-cash-coin"></i>
+          <h2>
+            Economique,
+          </h2>
+          <p style="font-size: 1.5em;">
+            notre plateforme de covoiturage a été pensée pour les
+            voyageurs soucieux de leur porte- monnaie .
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article>
+    <div class="container p-4">
+      <div class="row row-cols-2 align-items-center">
+        <div class="col text-center">
+          <i class="bi bi-shield-check"></i>
+          <h2>
+            Sécurisé,
+          </h2>
+          <p style="font-size: 1.5em;">
+             ce projet porté par notre directeur général José met un
+            point d’honneur sur la sécurité . Nos profils et avis sont vérifiés,
+            les plaques d’immatriculations sont demandées . Voyagez en toute
+            sérénité .
+          </p>
+        </div>
+        <div class="col text-center">
+          <img
+            class="w-100 rounded"
+            src="../images/femmeDrole.jpg"
+            alt="une femme souriante qui semble être satisfaite de son covoiturage"
+          />
+        </div>
+      </div>
+    </div>
+  </article>
+</section>

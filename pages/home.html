@@ -2,71 +2,165 @@
   <div class="text-center text-white hero-scene-content">
     <h1>EcoRide</h1>
     <p>c'est le covoiturage économique et écologique !</p>
-    <div class="btn-container">
-      <label class="text-dark" for="Depart"></label>
-      <input id="Depart" type="text" name="depart" id="depart" placeholder="Départ" required></input>
-      
-      <label class="text-dark" for="Arrivee"></label>
-      <input id="Arrivee" type="text" name="arrivee" id="Arrivee" placeholder="Arrivée" required></input>
-       
-      <label class="text-dark d-none d-sm-block" for="date"  ></label>
-      <input id="date" type="date" name="date" required></input>
+   
+     <!-- Button pour ouvrir la modale -->
+<button type="button" class="btn btn-secondary rounded-pill text-black"  data-bs-toggle="modal" data-bs-target="#trouverUnTrajet">
+  Trouvez un trajet
+</button>
+  </div>
 
-      <input class="bg-primary text-white pb-2" type="submit" name="submit" value="Rechercher">
+   <!-- Modal -->
+<div class="modal fade" id="trouverUnTrajet" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 text-primary" id="exampleModalLabel">Trouvez un trajet</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      
+      <div class="modal-body">
+
+        <!--Formulaire de la modale-->
+        <form>
+          <div class="mb-3">
+            <label for="depart" class="form-label">Départ</label>
+            <input type="text" class="form-control" id="depart" aria-describedby="departAide">
+            <div id="departAide" class="form-text">Choisissez le lieu de départ de votre trajet.</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="arrivee" class="form-label">Arrivée</label>
+            <input type="text" class="form-control" id="arrivee"
+            aria-describedby="arriveeAide">
+            <div id="arriveeAide" class="form-text">Choisissez le lieu d'arrivée de votre trajet.</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="quand" class="form-label">Quand ?</label>
+            <input type="date" class="form-control" id="quand"
+            aria-describedby="quandAide">
+            <div id="quandAide" class="form-text">Choisissez la date de votre trajet.</div>
+          </div>
+
+         
+         <div class="container text-center">
+          <button type="submit" class="btn btn-primary">Rechercher</button>
+         </div>
+
+        </form>
+      </div>
     </div>
   </div>
 </div>
+  </div>
+</div>
 
+<!--SECTION-->
 <section>
-  <article>
-    <div class="container p-4">
-      <h2 class="text-center text-primary">Bienvenue sur EcoRide</h2>
-     <div class="text-center"> <a class="text-center text-primary" href="/">Inscrivez vous pour créer un trajet</a></div><br>
-      <div class="row row-cols-2 align-items-center ">
-        <div class="col text-center ">
+ 
+    <div class="container text-center p-4">
+      <h2 class="text-primary">Bienvenue sur EcoRide</h2>
+      <div class="text-center">
+        <a class="text-primary" href="/inscription"
+          >Inscrivez vous pour créer un trajet</a
+        >
+      </div>
+    </div>
+    
+       <!--Article 1-->
+    <article>
+      <div class="container text-center">
+        <div class="row row-cols-lg-2 row-cols-md-1 row-cols-sm-1 row-cols-1 mb-5">
+
+            <!--Texte-->
+         <div class="col order-1 order-sm-1 order-md-1 g-4"> 
           <i class="bi bi-tree"></i>
-          <p>
-            Ecologique, notre ambition chez EcoRide est de réduire l’impact écologique des déplacements grâce au covoiturage .
+          <h3>
+            Ecologique,
+          </h3>
+          <p style="font-size: 1.5em;">
+            notre ambition chez EcoRide est de réduire l’impact
+            écologique des déplacements grâce au covoiturage.
           </p>
         </div>
-        <div class="col text-center">
-          <img class="w-50 rounded" src="../images/Section1.jpg" alt="vue aérienne d'une route de forêt en automne">
+
+           <!--Image-->
+         <div class="col order-lg-1">
+          <img
+           class=" w-100 rounded"
+           src="../images/routeAerienne.jpg"
+           alt="vue aérienne d'une route de forêt avec un camion roulant droit vers son destin"
+         />
+         </div>
+          
         </div>
       </div>
-    </div>
+    
   </article>
 
-  <article class=" bg-dark">
-    <div class="container">
-      <div class="row row-cols-2 align-items-center text-secondary p-4">
-        <div class="col text-center">
-          <img class="w-50 rounded" src="../images/money.jpg" alt="vue aérienne d'une route de forêt avec des arbres en automne">
-        </div>
-        <div class="col text-center">
-          <i class="bi bi-tree"></i>
-          <p>
-            Economique, notre plateforme de covoiturage a été pensée pour les voyageurs soucieux de leur porte- monnaie .
-          </p>
-        </div>
+  <!--Article 2-->
+  <article class="bg-dark pt-5 pb-5">
+
+    <div  data-aos="fade-up" data-aos-offset="500" class="container text-center" >
+      <div class="row row-cols-md-2 row-cols-sm-1 row-cols-1 g-4">
+
+          <!--Image 2-->
+       <div class="col order-md-1">
+        <img
+         class=" w-100 rounded"
+         src="../images/Section1.jpg"
+         alt="vue aérienne d'une route de forêt avec un camion roulant droit vers son destin"
+       />
+       </div>
+
+          <!--Texte 2-->
+       <div class="col order-sm-1 text-secondary"> 
+        <i class="bi bi-cash-coin"></i>
+        <h3>
+          Economique,
+        </h3>
+        <p style="font-size: 1.5em;">
+          notre plateforme de covoiturage a été pensée pour les voyageurs soucieux de leur porte- monnaie. Voyagez sans vous ruinez.
+        </p>
+      </div>
+
        
+        
       </div>
     </div>
+  </div>
   </article>
 
+  <!--Article 3-->
   <article>
-    <div class="container p-4">
-      
-      <div class="row row-cols-2 align-items-center">
+    <div  data-aos="fade-up" data-aos-offset="500" class="container text-center pt-5 pb-5" >
+      <div class="row row-cols-md-2 row-cols-sm-1  row-cols-1">
+
+          <!--Texte 3-->
+       <div class="col order-sm-1 g-4"> 
+        <i class="bi bi-shield-check"></i>
+        <h3>
+          Sécurisé,
+        </h3>
+        <p style="font-size: 1.5em;">
+          ce projet porté par notre directeur général José met un point d’honneur sur la sécurité . Nos profils et avis sont vérifiés, les plaques d’immatriculations sont demandées . Voyagez en toute sérénité.
+        </p>
+      </div>
+
+         <!--Image 3-->
+         <div class="col order-md-1">
+          <img
+           class=" w-100 rounded"
+           src="../images/femmeDrole.jpg"
+           alt="photo d'une femme qui sort la tête de la porte de sa voiture en souriant"
+         />
+         </div>
+
        
-        <div class="col text-center">
-          <i class="bi bi-tree"></i>
-          <p>
-            Sécurisé, ce projet porté  par notre directeur général José met un point d’honneur  sur la sécurité . Nos profils et avis sont vérifiés, les plaques d’immatriculations sont demandées . Voyagez en toute sérénité .          </p>
-        </div>
-        <div class="col text-center">
-          <img class="w-50 rounded" src="../images/unGarsHeureux.jpg" alt="vue aérienne d'une route de forêt avec des arbres en automne">
-        </div>
+        
       </div>
     </div>
+  </div>
   </article>
+
 </section>
